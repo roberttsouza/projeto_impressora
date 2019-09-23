@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/******************************* BARRA DE NAVEGAÇÃO **********************/
+
+nav{
+	position: relative;
+    background: #222;
+	padding: 30px 90px;
+	transition: .6s;
+}
+
+
+nav ul{
+  	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+
+	
+}
+
+nav ul li{
+	list-style: none;
+	
+}
+
+
+nav ul li a{
+	
+	line-height: 40px;
+	color: #fff;
+	padding: 12px 30px;
+	text-decoration: none;
+	;
+	text-transform: uppercase;
+	transition: .6s;
+} 
+
+
+/*****************************LOGO CENTRALIZADO NO NAVBAR *************************/
+
+.logo{
+	line-height: 40px;
+	letter-spacing: 5px;
+	font-size: 40px;
+    transition: .6s;
+    text-decoration: none;
+    color: rgb(109, 188, 212);
+}
+
+.logo1{
+	display: none;
+}
+
+
+
+/************************************botão de navegação rapida******************************/
+
+
+#mainbox{
+	color: #fff;
+	position: absolute;
+	top: 1vh;
+	left: 30px;
+	font-size: 30px;
+	cursor: pointer;
+	transition: .4s;
+}
+
+.sidemenu{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 0px;
+	background-color: #222;
+	z-index: 1;
+	padding-top: 100px;
+	overflow: hidden;
+	transition: .4s;
+}
+
+.sidemenu a{
+	padding: 1px 0px 20px 30px;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.4);
+	text-transform: uppercase;
+	font-size: 60px;
+	display: block;
+	text-align: center;
+	margin-top: 0%;
+	transition: .4s;
+}
+
+.sidemenu a:hover{
+	color: rgb(109, 188, 212);
+}
+
+.sidemenu .closebtn{
+	position: absolute;
+	top: 0px;
+	margin-left: 0px;
+	font-size: 55px;
+}
+
+
+/****************************************** acesso ao formulario de impressora*************************************/
+
+
+
+#acessoformulario{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+		 
+}
+
+.acessoformulariobtn a{
+	display: block;
+	background: #111;
+	align-items: center;
+	margin-top: 2%;
+	padding: 20px 90px;
+	color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+	border-radius: 9px;
+    transition: .4s;
+}
+
+.acessoformulariobtn a:hover{
+	background: rgb(109, 188, 212);
+	color: #222;
+}
+
+
+/********************************************background banner *****************************************/
+
+
+section.sec1{
+	width: 100%;
+	height: 90.8vh;
+	background: url('banner.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+/*******************************************estilização do formulario ********************************/
+#formCadh{
+	margin-top: 4%;
+	margin-left: 3%;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	
+
+}
+
+#formCad{
+
+	margin-left: 3%;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 5%;
+}
+
+.campo{
+	width: 30%;
+	height: 30px;
+	display: block;
+	
+}
+
+.campoLog{
+	width: 30%;
+	height: 150px;
+	display: block;
+	
+}
+
+textarea #log{
+	height: 100px;
+}
+
+
+
+form .btn{
+	width: 15%;
+	height: 30px;
+	cursor: pointer;
+	margin-top: 5%;
+	border: none;
+	border-radius: 3px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+form #btnS{
+	background: rgb(78, 187, 123);
+}
+
+form #btnL{
+	background: rgb(204, 61, 61);
+}
+
+/***************************estilo da lista do arquivo listar_reg_impressora ******************************/
+
+
+article{
+	margin-bottom: 5px;
+	padding: 10px;
+	margin-left: 2%;
+	margin-right: 2%;
+	background: linear-gradient(to right, #8e9eab, #eef2f3);
+	
+}
+
+
+h4 #linha{
+	color: aliceblue; 
+	
+}
+
+
+/*maginação do arquivo listar_reg_impressora */
+
+a .paginacao{
+	text-decoration: none;
+}
+
+
+/***************************st posição dos botões para gerar Excel**********************/
+
+.btnRelatorio{
+	position: absolute;
+	right: 50px;
+	top: 57%;
+}
+
+#btn-sm{
+	height: 30px;
+	width: 110px;
+	cursor: pointer;
+	background: rgb(78, 187, 123);
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+
+/**********************************inicio da estilização de dispositivos moveis******************************/
+
+
+
+
+@media screen and (max-width: 900px){
+
+nav{
+	display: none;
+}
+
+#mainbox{
+	color: #222;
+	
+}
+
+.sidemenu a{
+	font-size: 30px;
+}
+
+section.sec1{
+	height: 100vh;
+}
+
+.logo1{
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: inline-table;
+	letter-spacing: 5px;
+	font-size: 40px;
+    transition: .6s;
+    text-decoration: none;
+    color: rgb(109, 188, 212);
+
+}
+
+#formCadh{
+margin-top: 20%;
+}
+
+#formCad{
+	text-align: center;
+	margin-top: 8%;
+	
+	
+}
+
+.campo{
+	display: flex;
+	width: 60%;
+	margin: auto;
+}
+
+.campoLog{
+	display: flex;
+	width: 60%;
+	height: 150px;
+	margin: auto;
+}
+
+
+form .btn{
+	width: 30%;
+}
+
+}
+
+
+
+
